@@ -4,7 +4,7 @@
 
 const WebpackDevServer = require("webpack-dev-server");
 const webpack = require("webpack");
-const paths = require("paths");
+const paths = require("./paths");
 const config = require("./webpack-dev-config.js");
 
 const Port = 3000;
@@ -32,6 +32,6 @@ const options = {
 
 WebpackDevServer.addDevServerEntrypoints(config, options);
 const compiler = webpack(config);
-const server = new WebpackDevServer;(compiler, options);
+const server = new WebpackDevServer(compiler, options);
 
 server.listen(Port, Host, () => {});

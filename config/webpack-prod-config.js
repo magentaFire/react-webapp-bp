@@ -6,7 +6,7 @@ const path = require("path");
 
 const webpack = require("webpack");
 const merge = require("webpack-merge");
-const UglifyJSPlugin = require("UglifyJSPlugin");
+const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const paths = require("./paths");
@@ -60,13 +60,10 @@ module.exports = merge(common, {
                         {
                             loader: "css-loader",
                             options: {
-                                discardDuplicates: true,
                                 sourceMap: false,
                                 modules: true,
-                                localIndentName: "[name]_[local]__[hash:base64:5]"
                             }
                         }
-                        // additional loaders here (e.g. sass-loader)
                     ]
                 })
             }
