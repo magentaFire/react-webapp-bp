@@ -17,7 +17,10 @@
         }
     },
     "lint-staged": {
-        "src/**/*.{js,jsx}": ["eslint --fix", "pretty-quick - staged"]
+        "src/**/*.{js,jsx}": [
+            "eslint --fix",
+            "pretty-quick - staged"
+        ]
     },
     "devDependencies": {
         "@babel/core": "^7.5.5",
@@ -38,8 +41,6 @@
         "extract-text-webpack-plugin": "^4.0.0-beta.0",
         "file-loader": "^4.2.0",
         "html-webpack-plugin": "^3.2.0",
-        "husky": "^3.0.3",
-        "lint-staged": "^9.2.1",
         "path": "^0.12.7",
         "prettier": "^1.18.2",
         "react-hot-loader": "^4.12.10",
