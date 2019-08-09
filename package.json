@@ -13,11 +13,11 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "lint-staged"
+            "pre-commit": "pretty-quick -—staged"
         }
     },
     "lint-staged": {
-        "src/**/*.{js,jsx}": ["eslint", "pretty-quick -—staged", "git add"]
+        "src/**/*.{js,jsx}": ["eslint", "pretty-quick -—staged"]
     },
     "devDependencies": {
         "@babel/core": "^7.5.5",
