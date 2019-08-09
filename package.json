@@ -11,17 +11,6 @@
         "start:prod": "yarn build; serve build",
         "lint": "eslint src -c .eslintrc.json --ext js,jsx"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "src/**/*.{js,jsx}": [
-            "eslint --fix",
-            "pretty-quick - staged"
-        ]
-    },
     "devDependencies": {
         "@babel/core": "^7.5.5",
         "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
