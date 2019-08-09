@@ -2,18 +2,18 @@
 
 // dev-server is responsible for running your project locally
 
-const WebpackDevServer = require("webpack-dev-server");
-const webpack = require("webpack");
-const paths = require("./paths");
-const config = require("./webpack-dev-config.js");
+const WebpackDevServer = require('webpack-dev-server');
+const webpack = require('webpack');
+const paths = require('./paths');
+const config = require('./webpack-dev-config.js');
 
 const Port = 3000;
-const Host = "localhost";
+const Host = 'localhost';
 
 const options = {
     host: Host,
     hot: true,
-     // full-screen overlay in the browser for compiler errors or warnings
+    // full-screen overlay in the browser for compiler errors or warnings
     overlay: {
         warnings: false,
         errors: true
