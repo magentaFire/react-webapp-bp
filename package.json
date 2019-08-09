@@ -17,8 +17,7 @@
         }
     },
     "lint-staged": {
-        "src/**/*.{js,jsx}": ["eslint --fix", "pretty-quick -—staged",
-            "git add"]
+        "src/**/*.{js,jsx}": ["eslint --fix", "pretty-quick -—staged"]
     },
     "devDependencies": {
         "@babel/core": "^7.5.5",
